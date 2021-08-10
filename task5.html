@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function calclate() {
+    var num1= parseFloat(document.getElementById("num1").value);
+    var num2= parseFloat(document.getElementById("num2").value);
+    
+    var operator = document.getElementById("oper").value;
+    if (operator === "add"){
+            document.getElementById("result").value = num1+num2;
+            }
+    if (operator === "subtract"){
+            document.getElementById("result").value = num1-num2;}
+    if (operator === "multiply"){
+            document.getElementById("result").value = num1*num2;}
+    if (operator === "divide"){
+            document.getElementById("result").value = num1/num2;}
+
+    }
+    </script>
+    
+</head>
+<body>
+        <input type="text" id="num1" placeholder="Enter number 1">
+        <select name="" id="oper">
+        <option value="add">+</option>
+        <option value="subtract"> -</option>
+        <option value="multiply">x</option>
+        <option value="divide">/</option></select> 
+        <input type="text" name="" id="num2" placeholder="Enter number 2"> <br>
+        <br> <button onclick="calclate();">=</button>
+        <input type="text" id="result" >
+</body>
+</html>

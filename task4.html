@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        function randomnum() {
+            var num=Math.floor((Math.random() * 10) + 1);
+            var guess = prompt('Enter Your guess between 1 and 10');
+            if (guess==num) {
+                alert("You have guessed right.It is " +guess);
+            }
+            else{
+                alert("Wrong Guess The number was "+num);
+            }
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="randomnum()">Random number guess</button>
+</body>
+</html>
