@@ -1,7 +1,6 @@
 function strSrch(strS) {
     var ind=strS.search("Script");
     if(ind==4){
-        console.log(ind);
         var strN=strS.slice(0,4)+strS.slice(10);
         console.log(strN);
     }
